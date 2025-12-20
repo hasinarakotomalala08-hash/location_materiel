@@ -1,0 +1,467 @@
+/* ============================================
+   TYPOGRAPHIE ÉLÉGANTE
+   ============================================ */
+
+/* Police par défaut - Corps de texte */
+body {
+    font-family: 'Lato', 'Segoe UI', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: #333;
+}
+
+/* /* Titres élégants * */
+h1, h2, h3, h4, h5, h6,
+.navbar-brand {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+/* Boutons texte élégant */
+.btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Lead text (sous-titres) */
+.lead {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Prix - Police élégante */
+.text-gold,
+.card-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(212, 175, 55, 0.3);
+}
+
+/* ============================================
+   BOUTONS DORÉS
+   ============================================ */
+
+/* Boutons dorés */
+.btn-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941E 100%);
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background: linear-gradient(135deg, #B8941E 0%, #967515 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.btn-outline-gold {
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+    background: transparent;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+    background: #D4AF37;
+    color: white;
+    border-color: #D4AF37;
+}
+
+/* ============================================
+   TEXTES ET ICÔNES
+   ============================================ */
+
+/* Texte doré */
+.text-gold {
+    color: #D4AF37 !important;
+}
+
+/* Icônes dorées */
+.icon-gold {
+    color: #D4AF37;
+}
+
+/* ============================================
+   SECTIONS ET CARDS
+   ============================================ */
+
+/* Hero section avec fond doré clair */
+.hero-gold {
+    background: linear-gradient(135deg, #FFF9E6 0%, #F4E5B8 100%);
+    border-bottom: 3px solid #D4AF37;
+}
+
+/* Cards avec effet doré */
+.card-gold {
+    border-top: 3px solid #D4AF37;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-gold:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* ===========================================
+   HERO BACKGROUND IMAGE
+   =========================================== */
+
+/* Hero avec image background */
+.hero-background {
+    position: relative;
+    min-height: 500px;
+    background-image: url('../images/background-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+
+/* /* Overlay sombre léger * */
+.hero-background {
+    position: relative;
+    min-height: 500px;
+    background-image: url('../images/background-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Overlay sombre couvrant toute l'image */
+.hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* ajustez l'opacité */
+    z-index: 1;  /* derrière le contenu mais au-dessus de l'image */
+}
+
+/* Contenu hero au-dessus de l'overlay */
+.hero-overlay {
+    position: relative;
+    z-index: 2; /* au-dessus de l'overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    height: 100%;
+} 
+
+/* Titre hero élégant */
+.hero-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    letter-spacing: 3px;
+    animation: fadeInDown 1s ease-in-out;
+    margin-bottom: 0.5rem;
+}
+
+/* Sous-titre hero */
+.hero-subtitle {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    animation: fadeInUp 1s ease-in-out 0.3s forwards;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bouton avec ombre */
+.shadow-lg {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    .hero-background {
+        background-attachment: scroll; /* mobile ne supporte pas fixed */
+        min-height: 500px;
+        padding-top: 70px;
+    }
+    .hero-overlay {
+        min-height: 400px;
+    }
+}
+
+/* ============================================
+   BACKGROUND GÉNÉRAL SITE
+   ============================================ */
+
+/* Background gris léger pour toutes les pages */
+body {
+    background-color: #F5F5F5 !important;
+}
+
+/* Footer noir */
+footer {
+    background-color: #343a40 !important;
+}
+
+/* Cards blanches ressortent sur fond gris */
+.card {
+    background-color: white !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* BREADCRUMB SECTION */
+.breadcrumb-section {
+    background: linear-gradient(135deg, #f5f5f5, #ececec);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding: 10px 0;
+}
+
+/* Breadcrumb wrapper */
+.breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chaque item */
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #d4a017;   /* gold */
+}
+
+/* Item actif */
+.breadcrumb-item.active {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Séparateur " > " stylisé */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    color: #888;
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+
+/* Container principal transparent */
+.container {
+    background-color: transparent;
+}
+
+/* Tables sur fond blanc */
+.table {
+    background-color: white !important;
+}
+
+/* List groups sur fond blanc */
+.list-group-item {
+    background-color: white !important;
+}
+
+/* Modal garde fond blanc */
+.modal-content {
+    background-color: white !important;
+}
+
+/* Forms inputs sur fond blanc */
+.form-control,
+.form-select {
+    background-color: white !important;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .hero-background {
+        background-attachment: scroll !important;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* ============================================
+   NAVBAR DARK GLASS EFFECT - FIXED TOP
+   ============================================ */
+
+/* Remove padding-top body (cause conflit!) */
+body {
+    padding-top: 0 !important;
+}
+
+
+/* Navbar dark glass - fixed top */
+.navbar-glass-dark {
+    background: rgba(33, 37, 41, 0.80) !important;
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Scroll effect - plus opaque */
+.navbar-glass-dark.scrolled {
+    background: rgba(33, 37, 41, 0.95) !important;
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo navbar - taille standard */
+.navbar-logo-glass {
+    height: 80px;                /* Taille par défaut */
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.35));
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease, height 0.25s ease;
+}
+
+/* Hover effect subtil */
+.navbar-logo-glass:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+    filter: brightness(1.2) drop-shadow(0 4px 12px rgba(212, 175, 55, 0.6));
+}
+
+/* Logo réduit au scroll */
+.navbar-glass-dark.scrolled .navbar-logo-glass {
+    height: 42px;
+}
+
+/* Hover effect quand navbar est scrolled */
+.navbar-glass-dark.scrolled .navbar-brand:hover .navbar-logo-glass {
+    transform: scale(1.03); /* un peu plus subtil car le logo est déjà petit */
+    filter: brightness(1.2) drop-shadow(0 4px 12px rgba(212, 175, 55, 0.6));
+    opacity: 0.95;
+}
+
+/* Navbar links */
+.navbar-glass-dark .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-glass-dark .nav-link:hover {
+    color: #D4AF37 !important;
+    transform: translateY(-1px);
+}
+
+/* Dropdown */
+.navbar-glass-dark .dropdown-menu {
+    background: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-glass-dark .dropdown-item {
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.navbar-glass-dark .dropdown-item:hover {
+    background: rgba(212, 175, 55, 0.2);
+    color: #D4AF37;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    .navbar-logo-glass {
+        height: 118px;
+    }
+    
+    .navbar-glass-dark.scrolled .navbar-logo-glass {
+        height: 38px;
+    }
+    
+    .navbar-collapse {
+        background: rgba(33, 37, 41, 0.98);
+        backdrop-filter: blur(15px);
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
